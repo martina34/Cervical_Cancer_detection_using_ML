@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Cervical Cancer </title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+        
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                <span class="site-heading-upper text-primary mb-3">welcome to our Website</span>
+                <span class="site-heading-lower">Cervical Cancer</span>
+            </h1>
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Cervical Cancer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('index') }}">Home</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('risk_factor') }}">Risk Factors</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('signs_symptoms') }}">Signs & symptoms</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('prevention') }}">Prevention</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="page-section clearfix">
+            <div class="container">
+                <div class="intro">
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{ url_for('static', filename='img/home.jpg') }}" alt="..." />
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">Facts About</span>
+                            <span class="section-heading-lower">Cervical Cancer</span>
+                        </h2>
+                        <p class="mb-3"><ul>
+                            <li>Human papillomavirus (HPV) is the main cause of cervical cancer</li>
+                            <li>There are more than 3,000 cases of cervical cancer in the UK per year</li>
+                            <li>99.8% of UK cervical cancer cases are preventable </li>
+                            <li>All women should begin screening at age 21 </li>
+                          </ul></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-upper">Today</span>
+                                <span class="section-heading-lower">Is Your Day</span>
+                            </h2>
+                            <p class="mb-0">Cervical cancer is one of the most common types of cancer occurring in women worldwide.
+                                It affects the cervix, the lower part of the uterus located at the top of the vagina.
+                                 It is mainly caused by human papillomavirus (HPV) infection, which is transmitted sexually,
+                                  and it usually develops over several years.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">Copyright &copy; Your Website 2023</p></div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

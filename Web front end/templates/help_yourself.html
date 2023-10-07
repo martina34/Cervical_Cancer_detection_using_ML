@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+            <meta name="description" content="" />
+            <meta name="author" content="" />
+            <title>help_yourself </title>
+            <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+            
+            <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+            
+            <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+        </head>
+    </head>
+    
+    
+
+    <body>
+        <div class="question">
+        <h1>Go ahead and answer these question!</h1>
+        
+        <form method="POST" action="{{ url_for('predict') }}" id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+        <p>Enter your age ?! </p>
+        
+          <input type="number" name="q1" value="YES"> <code>&lt;&gt;</code>
+           
+        
+        
+        <p>Enter the number of sexual partners you have had ?! </p>
+        
+          <input type="number" name="q2" value="YES"> <code>&lt;&gt;</code> 
+        
+
+        <p>Enter the age which you had your first sexual intercourse ?! </p>
+        
+          <input type="number" name="q3" value="YES"> <code>&lt;&gt;</code>
+           
+    
+
+        <p>Enter the number of times you have been pregnant ?! </p>
+        
+          <input type="number" name="q4" value="YES"> <code>&lt;&gt;</code>
+           
+        
+        
+        
+        
+        <p>Do you smoke?</p>
+        
+        
+          <input type="radio" name="q5" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q5" value="0"> <code class="answer">NO</code>
+          
+       
+
+        <p>How many packs you smoke per year ...?! </p>
+        
+          <input type="number" name="q6" value="YES"> <code>&lt;&gt;</code>
+           
+        
+
+        
+        
+        <p>Have you used hormonal contraceptives?</p>
+        
+       
+          <input type="radio" name="q7" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q7" value="0"> <code class="answer">NO</code>
+          
+        
+
+        <p>Enter the number of years you have used hormonal contraceptives ...! </p>
+        
+          <input type="number" name="q8" value="YES"> <code>&lt;&gt;</code>
+           
+        
+
+        <p>Have you used an intrauterine device (IUD) ?</p>
+        
+        
+          <input type="radio" name="q9" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q9" value="0"> <code class="answer">NO</code>
+          
+        
+
+        <p>Enter the number of years you have used an IUD ...! </p>
+        
+          <input type="number" name="q10" value="YES"> <code>&lt;&gt;</code>
+           
+        
+
+
+        <p>Have you had any sexually transmitted diseases(STDs)  ?</p>
+        
+        
+          <input type="radio" name="q11" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q11" value="0"> <code class="answer">NO</code>
+          
+        
+
+        <p>Enter the number of STDs you have had ...! </p>
+          <input type="number" name="q12" value="YES"> <code>&lt;&gt;</code>
+           
+        
+
+        <p>Have you had condylomatosis  ?</p>
+        
+        
+          <input type="radio" name="q13" value="1"> <code class="answer">YES</code>
+         <input type="radio" name="q13" value="0"> <code class="answer">NO</code>
+          
+    
+
+        <p>Have you had cervical condylomatosis  ?</p>
+        
+        
+          <input type="radio" name="q14" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q14" value="0"> <code class="answer">NO</code>
+          
+        
+
+        <p>Have you had vaginal condylomatosis  ?</p>
+        
+        
+          <input type="radio" name="q15" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q15" value="0"> <code class="answer">NO</code>
+          
+    
+        
+
+        <!--
+          <p>Have you had vaginal condylomatosis  ?</p>
+        
+        
+          <input type="radio" name="question2" value="font-size"> <code class="answer">YES</code>
+          <input type="radio" name="question2" value="font-family"> <code class="answer">NO</code> 
+        -->
+          
+        
+        
+        <p>Have you had vulvo-perineal condylomatosis  ?</p>
+        
+        
+          <input type="radio" name="q16" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q16" value="0"> <code class="answer">NO</code>
+          
+        
+
+        <p>Have you had syphilis ?</p>
+        
+        
+          <input type="radio" name="q17" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q17" value="0"> <code class="answer">NO</code>
+          
+        
+
+        <p>Have you had pelvic inflammatory disease(PID)  ?</p>
+        
+        
+          <input type="radio" name="q18" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q18" value="0"> <code class="answer">NO</code>
+          
+        
+        
+        <p>Have you had genital herpes ?</p>
+        
+        
+        <input type="radio" name="q19" value="1"> <code class="answer">YES</code>
+        <input type="radio" name="q19" value="0"> <code class="answer">NO</code>
+          
+        
+
+        <p>Have you had molluscum contagiosum  ?</p>
+        
+        
+          <input type="radio" name="q20" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q20" value="0"> <code class="answer">NO</code>
+          
+        
+        
+        <p>Have you had acquired immune deficiency syndrome (AIDS)  ?</p>
+        
+        
+          <input type="radio" name="q21" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q21" value="0"> <code class="answer">NO</code>>
+          
+        
+
+        <p>Have you had immunodeficiency virus(HIV)  ?</p>
+        
+        
+          <input type="radio" name="q22" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q22" value="0"> <code class="answer">NO</code>
+          
+        
+
+        <p>Have you had hepatitis B ?</p>
+        
+        
+          <input type="radio" name="q23" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q23" value="0"> <code class="answer">NO</code>
+          
+        
+
+        <p>Have you had human papillomavirus (HPV) ?</p>
+        
+        
+          <input type="radio" name="q24" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q24" value="0"> <code class="answer">NO</code>
+          
+        
+
+        <p>How many times you have been diagnosed os STDs ...! </p>
+        
+          <input type="number" name="q25" value="YES"> <code>&lt;&gt;</code>
+           
+        
+
+        <p>Enter the total number of years elapsed since the first diagnose of STDs ...! </p>
+        
+          <input type="number" name="q26" value="YES"> <code>&lt;&gt;</code>
+           
+        
+
+        <p>Enter the total number of years elapsed since the last diagnose of STDs ...! </p>
+        
+          <input type="number" name="q27" value="YES"> <code>&lt;&gt;</code>
+        
+
+
+        <p>Have you had been diagnosed with cervical cancer ?</p>
+        
+        
+          <input type="radio" name="q28" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q28" value="0"> <code class="answer">NO</code>
+          
+        
+
+        <p>Have you had been diagnosed with human papillomavirus(HPV) ?</p>
+        
+        
+          <input type="radio" name="q29" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q29" value="0"> <code class="answer">NO</code>
+          
+        
+
+
+        <p>Have you had been diagnosed with cervical itraepithelial neoplasia(CIN) ?</p>
+        
+        
+          <input type="radio" name="q30" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q30" value="0"> <code class="answer">NO</code>
+          
+        
+
+        <p>Have you had been diagnosed with any other diseases ?</p>
+        
+        
+          <input type="radio" name="q31" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q31" value="0"> <code class="answer">NO</code>
+          
+        
+
+
+
+        <p>Enter the total number of other diseases you have been diagnosed with ...! </p>
+        
+          <input type="number" name="q32" value="YES"> <code>&lt;&gt;</code>
+           
+        
+
+        <p>Have you had been diagnosed with human immunodeficiency virus(HIV) ?</p>
+        
+        
+          <input type="radio" name="q33" value="1"> <code class="answer">YES</code>
+          <input type="radio" name="q33" value="0"> <code class="answer">NO</code>
+          
+        
+
+        
+        <div>
+        <input type="submit" value="Submit">
+        </div>
+
+      </div>
+    </form>>
+
+
+
+       <!-- Contact-->
+       <section class="page-section" id="contact">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <h2 class="mt-0">Let's Get In Touch!</h2>
+                    <hr class="divider" />
+                    
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                <div class="col-lg-6">
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    
+                    <form method="POST" action="{{ url_for('predict') }}" id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="number" placeholder="Enter your age..." data-sb-validations="required" />
+                            <label for="name">age</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">your age is required.</div>
+                        </div>
+
+
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                            <label for="name">Full name</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <label for="email">Email address</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                            <label for="phone">Phone number</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                        </div>
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                To activate this form, sign up at
+                                <br />
+                                
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+        </body>
+</html>

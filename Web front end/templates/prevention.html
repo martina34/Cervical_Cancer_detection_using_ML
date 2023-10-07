@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>prevention</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+        
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                <span class="site-heading-upper text-primary mb-3">welcome to our Website</span>
+                <span class="site-heading-lower">Cervical Cancer</span>
+            </h1>
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">cervical cancer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('index') }}">Home</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('risk_factor') }}">Risk Factors</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('signs_symptoms') }}">Signs & symptoms</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('prevention') }}">Prevention</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-5">
+                                <span class="section-heading-upper">Look here</span>
+                                <span class="section-heading-lower">MYTH VS FACT</span>
+                            </h2>
+                            <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    cervical screening checks for cervical cancer
+                                    <span class="ms-auto">cervical screening are used to check the health of your cervix
+                                        
+                                    </span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    if your cervical screening comes back abnormal ,you have cervical cancer
+                                    <span class="ms-auto">an abnormal test result means changes to the cervical cancer</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Older women do not need to undergo cervical screening
+                                    <span class="ms-auto">Women aged 50-64 should undergoa cervical screening every 5 years</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Smoking is not linked to cervical cancer
+                                    <span class="ms-auto">Around 20% of cervical cancer is the UK linked to smoking </span>
+                                </li>
+                                
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section about-heading">
+            <div class="container">
+                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{{ url_for('static', filename='img/care.jpg') }}" alt="..." />
+                <div class="about-heading-content">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-10 mx-auto">
+                            <div class="bg-faded rounded p-5">
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Cervical Cancer </span>
+                                    <span class="section-heading-lower">Prevention</span>
+                                </h2>
+                                <p>
+                                    <ul>
+                                        <li>Get an HPV Vaccine</li>
+                                        <li>Limit exposure to HPV </li>
+                                        <li>Use a condom</li>
+                                        <li>stop Smoking</li>
+                                      </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">Copyright &copy; Your Website 2023</p></div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
